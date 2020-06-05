@@ -50,4 +50,12 @@ public class Quicksort {
             System.out.print(element + " ");
         }
     }
+    //This will just print the array without
+    //displaying the time it took to sort.
+    public void showResult(int[] array) {
+        System.out.println("Your array has been sorted!");
+        for (int element : array) {
+            System.out.print(element + " ");
+        }
+    }
 }
