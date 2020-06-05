@@ -22,5 +22,14 @@ public class InputHandler {
         return betweenValues;
     }
 
+    public boolean showElapsedTime() {
+        boolean showTime = true;
+        String choice = inputScanner.next();
+        if (choice.startsWith("f") || choice.startsWith("0")) {
+            showTime = false;
+        }
+        return showTime;
+    }
+
 
 }
