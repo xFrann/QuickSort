@@ -16,7 +16,7 @@ public class InputHandler {
     }
 
     public int getMaximumValue() {
-        System.out.println("Maximum value: ");
+        System.out.print("Maximum value: ");
         return inputScanner.nextInt();
     }
 
