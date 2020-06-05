@@ -44,8 +44,8 @@ public class Quicksort {
 
     //This method will print the sorted array and
     //the time that it took to sort it.
-    public void showResult(int[] array) {
-        System.out.println("Elements sorted in just: " + " ms");
+    public void showResult(int[] array, long time) {
+        System.out.println("Elements sorted in just: " + time + " ms");
         for (int element : array) {
             System.out.print(element + " ");
         }
