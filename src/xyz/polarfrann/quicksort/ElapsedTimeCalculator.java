@@ -5,7 +5,7 @@ public class ElapsedTimeCalculator {
     public ElapsedTimeCalculator(long start) {
         this.start = start;
     }
-    //Returns the elapsed time between the @param start milliseconds
+    //Returns the elapsed time between a start variable declaration
     //and the call of the function
     public long calculateElapsedTime() {
         return System.currentTimeMillis() - this.start;
