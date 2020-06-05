@@ -4,22 +4,20 @@ import java.util.Scanner;
 
 public class InputHandler {
 
-    Scanner inputScanner = new Scanner(System.in);
+    private Scanner inputScanner = new Scanner(System.in);
 
     public int scanSize() {
         return inputScanner.nextInt();
     }
 
-    public int[] scanBetweenValues() {
-        int[] betweenValues = new int[2];
-
+    public int getMinimumValue() {
         System.out.print("Minimum value: ");
-        betweenValues[0] = inputScanner.nextInt();
+        return inputScanner.nextInt();
+    }
 
-        System.out.print("Maximum value: ");
-        betweenValues[1] = inputScanner.nextInt();
-
-        return betweenValues;
+    public int getMaximumValue() {
+        System.out.println("Maximum value: ");
+        return inputScanner.nextInt();
     }
 
     public boolean showElapsedTime() {
