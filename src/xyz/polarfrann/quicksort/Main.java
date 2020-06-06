@@ -3,6 +3,8 @@ package xyz.polarfrann.quicksort;
 
 public class Main {
 
+    public static final int STARTING_INDEX = 0;
+
     public static void main(String[] args) {
 
         Quicksort qs = new Quicksort();
@@ -29,7 +31,7 @@ public class Main {
             long start = System.currentTimeMillis();
 
             //Sort the array
-            qs.quickSort(arrayToSort, 0, arrayToSort.length - 1);
+            qs.quickSort(arrayToSort, STARTING_INDEX, arrayToSort.length - 1);
 
             //Stop the timer and show the result
             ElapsedTimeCalculator timeCalculator = new ElapsedTimeCalculator(start);
@@ -38,7 +40,7 @@ public class Main {
         } else {
 
             //Sort the array && Show the result
-            qs.quickSort(arrayToSort, 0, arrayToSort.length - 1);
+            qs.quickSort(arrayToSort, STARTING_INDEX, arrayToSort.length - 1);
 
             qs.showResult(arrayToSort);
 
