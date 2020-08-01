@@ -9,7 +9,7 @@ public class Main {
 
         Quicksort qs = new Quicksort();
 
-        InputHandler input = new InputHandler();
+        InputController input = new InputController();
 
         System.out.print("How many integers should the array contain?: ");
         int size = input.scanSize();
