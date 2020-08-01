@@ -2,7 +2,7 @@ package xyz.polarfrann.quicksort;
 
 import java.util.Scanner;
 
-public class InputHandler {
+public class InputController {
 
     private Scanner inputScanner = new Scanner(System.in);
 
